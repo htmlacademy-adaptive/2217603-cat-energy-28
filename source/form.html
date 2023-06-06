@@ -8,7 +8,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo">
+    <a class="main-header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
@@ -37,10 +37,8 @@
   <main class="page-main">
     <h1 class="visually-hidden">Добро пожаловать на форму подбора программы!</h1>
     <section class="selection">
-      <header class="selection__header">
-        <h2 class="selection__title">Подбор программы</h2>
-        <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-      </header>
+      <h2 class="selection__title">Подбор программы</h2>
+      <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="selection__form form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="form__group">
           <legend class="visually-hidden">Данные вашего кота</legend>
@@ -138,9 +136,7 @@
           </ul>
         </fieldset>
         <div class="form__button-wrapper">
-          <button class="form__button button" type="submit">
-            <span>Отправить заявку</span>
-          </button>
+          <button class="form__button button" type="submit">Отправить заявку</button>
           <span class="form__signature">* — Обязательные поля</span>
         </div>
       </form>
@@ -156,7 +152,18 @@
       <div class="contacts__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.8040431138493!2d30.32033795572315!3d59.939053653515266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1685886579339!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen title="Карта местонахождения офиса Кэт энерджи."></iframe>
+          width="320" height="362" allowfullscreen title="Карта местонахождения Кэт энерджи.">
+        </iframe>
+        <noscript>
+          <a class="contacts__link" href="https://www.google.com/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург,+191186/@59.9387165,30.3230474,17z/data=!4m6!3m5!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474!16s%2Fg%2F11f789hbw0">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg">
+              <img class="contacts__image" src="img/map/map-mobile.jpg" width="320" height="362" loading="lazy"
+              alt="Изображение карты c адресом Кэт энерджи.">
+            </picture>
+          </a>
+        </noscript>
       </div>
     </section>
   </main>
