@@ -1,5 +1,17 @@
 .main-header {
   min-height: 66px;
+
+  @media (min-width: $tablet-width) {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 112px;
+    padding-top: 53px;
+  }
 }
 
 .main-header__logo {
@@ -11,5 +23,10 @@
 
   &[href]:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 51px;
+    flex-shrink: 0;
   }
 }

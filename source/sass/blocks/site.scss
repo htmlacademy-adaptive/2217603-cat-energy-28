@@ -16,20 +16,23 @@
 
   @media (min-width: $tablet-width) {
     @include font (18px, 24px);
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     @include font (20px, 30px);
-    // color: $color-white;
+    margin-bottom: 5px;
+    color: $color-white;
   }
 }
 
 .site__item {
-  @include container;
   text-align: center;
   position: relative;
 
   @media (max-width: $mobile-width-only) {
+    @include container;
+
     &::after {
       content: "";
       position: absolute;
@@ -50,6 +53,22 @@
       background: $color-background-after;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-of-type) {
+      margin-right: 35px;
+    }
+  }
+
+  &--current a {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $color-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom-color: $color-white;
+    }
+  }
 }
 
 .site__link {
@@ -59,88 +78,20 @@
   padding: 22px 22px 24px;
   text-decoration: none;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px 0 6px;
+  }
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
-
-// .site {
-//
-
-//   @media (min-width: @tablet-width) {
-//     display: grid;
-//     grid-template-columns: repeat(5, 1fr);
-//     width: 100%;
-//     background-color: transparent;
-//     gap: 0;
-
-//     &::after {
-//       content: "";
-//       grid-column: 3 / 4;
-//       grid-row: 1 / 4;
-//     }
-//   }
-// }
-
-// .site__item {
-//
-
-//   @media (min-width: @tablet-width) {
-//     .font(700,14px,21px);
-//     position: static;
-//     color: @color-black;
-//     box-shadow: none;
-//     margin: 0;
-//   }
-
-//   &--current a {
-//     @media (min-width: @tablet-width) {
-//       color: @color-brown;
-//       background-color: transparent;
-//     }
-
-//     &:hover {
-//       background-color: @color-blue;
-
-//       @media (min-width: @tablet-width) {
-//         background-color: transparent;
-//         color: @color-brown;
-//       }
-//     }
-
-//     &:active {
-//       background-color: @color-blue;
-//       color: @color-white;
-
-//       @media (min-width: @tablet-width) {
-//         background-color: transparent;
-//         color: @color-brown;
-//       }
-//     }
-//   }
-// }
-
-// .site__link {
-//
-
-//   @media (min-width: @tablet-width) {
-//     padding: 18px 5px 17px;
-//     background-color: transparent;
-//   }
-
-//   &:hover {
-//     background-color: @color-blue-hover;
-
-//     @media (min-width: @tablet-width) {
-//       background-color: transparent;
-//       color: @color-blue;
-//     }
-//   }
-
-//   &:active {
-//     background-color: @color-blue-active;
-//     color: rgba(255, 255, 255, 0.3);
-
-//     @media (min-width: @tablet-width) {
-//       background-color: transparent;
-//       color: rgba(0, 0, 0, 0.3);
-//     }
-//   }
-// }

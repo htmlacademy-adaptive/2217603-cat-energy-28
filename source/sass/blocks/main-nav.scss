@@ -22,11 +22,16 @@
 
     .main-nav__list {
       top: 66px;
+      z-index: 1;
     }
   }
 
   @media (min-width: $tablet-width) {
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 50%;
   }
 }
 
