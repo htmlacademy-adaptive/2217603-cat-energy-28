@@ -1,0 +1,21 @@
+.programs-block {
+  @include container;
+  margin-bottom: 20px;
+}
+
+.programs-block__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
