@@ -1,0 +1,5 @@
+.headline {
+  @include font(36px, 36px);
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+}

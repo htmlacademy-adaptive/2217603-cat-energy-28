@@ -1,1 +1,43 @@
-// Начните писать стили здесь
+// миксины
+@import "./mixins.scss";
+
+// переменные
+@import "./variables.scss";
+
+// базовые стили
+@import "./base/fonts.scss";
+@import "./base/base.scss";
+@import "./base/headline.scss";
+@import "./base/caption.scss";
+@import "./base/visually-hidden.scss";
+
+// блоки
+// @import "./blocks/button.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site.scss";
+@import "./blocks/logo.scss";
+
+// @import "./blocks/page-main.scss";
+// @import "./blocks/hero.scss";
+// @import "./blocks/advantages.scss";
+// @import "./blocks/services.scss";
+// @import "./blocks/search-hotel.scss";
+// @import "./blocks/map.scss";
+// @import "./blocks/main-footer.scss";
+// @import "./blocks/hashtag.scss";
+// @import "./blocks/social.scss";
+// @import "./blocks/copyright.scss";
+// @import "./blocks/feedback.scss";
+// @import "./blocks/form.scss";
+// @import "./blocks/field.scss";
+// @import "./blocks/control.scss";
+// @import "./blocks/modal-container.scss";
+// @import "./blocks/modal.scss";
+// @import "./blocks/multimedia.scss";
+// @import "./blocks/multimedia-card.scss";
+// @import "./blocks/likes.scss";
+// @import "./blocks/video-show.scss";
+// @import "./blocks/space.scss";
+

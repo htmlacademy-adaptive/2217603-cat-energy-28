@@ -1,0 +1,15 @@
+.main-header {
+  min-height: 66px;
+}
+
+.main-header__logo {
+  min-height: 66px;
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
