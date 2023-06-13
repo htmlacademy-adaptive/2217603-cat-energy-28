@@ -1,0 +1,10 @@
+.caption {
+  @include font(16px, 20px);
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 24px);
+  }
+}
