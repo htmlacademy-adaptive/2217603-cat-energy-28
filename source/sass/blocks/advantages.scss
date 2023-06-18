@@ -1,0 +1,139 @@
+.advantages {
+  @include container;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (max-width: $mobile-width-only) {
+    line-height: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 37px 153px;
+    counter-reset: section;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 77px;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $color-green;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+  }
+
+  &--nutrition::before {
+    background-image: url("../img/icons/icon-leaf.svg");
+    // background-image: url("../img/sprite.svg#icon-leaf");
+  }
+
+  &--boiling::before {
+    background-image: url("../img/icons/icon-water.svg");
+    // background-image: url("../img/sprite.svg#icon-water");
+  }
+
+  &--feeding::before {
+    background-image: url("../img/icons/icon-food.svg");
+    // background-image: url("../img/sprite.svg#icon-food");
+  }
+
+  &--timing::before {
+    background-image: url("../img/icons/icon-time.svg");
+    // background-image: url("../img/sprite.svg#icon-time");
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    min-height: 280px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0 57px;
+    gap: 31px;
+
+    &--nutrition {
+      max-width: 230px;
+    }
+
+    &--boiling {
+      max-width: 246px;
+    }
+
+    &--feeding {
+      max-width: 248px;
+    }
+
+    &--timing {
+      max-width: 250px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      @include font(280px, 280px);
+      position: absolute;
+      top: 0;
+      right: 0;
+      counter-increment: section;
+      content: counter(section);
+      font-family: "Oswald", "Arial", sans-serif;
+      color: $color-background;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--nutrition {
+      margin-right: 13px;
+    }
+
+    &--boiling {
+      margin-right: 2px;
+    }
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  color: $color-grey;
+}

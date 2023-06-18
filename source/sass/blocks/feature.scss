@@ -1,0 +1,24 @@
+.feature {
+  position: relative;
+  max-width: 124px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid $color-extra-light-grey;
+  border-radius: 3px;
+  padding: 14px 14px 17px;
+}
+
+.feature__term {
+  @include font (12px, 12px);
+  width: 87px;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $color-smoky-white;
+}
+
+.feature__definition {
+  @include font (24px, 24px);
+  margin: 0;
+}

@@ -91,7 +91,7 @@
           <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="advantages__item advantages__item--timing">
-          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
         </li>
       </ul>
     </section>
@@ -100,15 +100,19 @@
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
         в день. </p>
-      <dl class="example__list features">
-        <dt class="features__term">Снижение веса</dt>
-        <dd class="features__definition caption">5 кг</dd>
-        <dt class="features__term">Затрачено времени</dt>
-        <dd class="features__definition caption">60 дней</dd>
+      <dl class="example__list">
+        <div class="example__item feature">
+          <dt class="feature__term">снижение <span class="space space--mobile"></span>веса</dt>
+          <dd class="feature__definition caption">5 кг</dd>
+        </div>
+        <div class="example__item feature">
+          <dt class="feature__term">затрачено времени</dt>
+          <dd class="feature__definition caption">60 дней</dd>
+        </div>
       </dl>
       <p class="example__expenses caption">Затраты на питание: <span class="example__price">15 000</span> РУБ.</p>
       <div class="example__slider slider">
-        <div class="slider__before">
+        <div class="slider__item slider__item--before">
           <picture>
             <!--<source type="image/webp" media="(min-width: 768px)"
               srcset="img/slider/before-tablet.webp 1x, img/slider/before-tablet@2x.webp 2x">
@@ -119,7 +123,7 @@
               srcset="img/slider/before-mobile@2x.jpg 2x" alt="Фото кота до программы похудения.">
           </picture>
         </div>
-        <div class="slider__after">
+        <div class="slider__item slider__item--after">
           <picture>
             <!--<source type="image/webp" media="(min-width: 768px)"
               srcset="img/slider/after-tablet.webp 1x, img/slider/after-tablet@2x.webp 2x">
@@ -130,8 +134,8 @@
               srcset="img/slider/after-mobile@2x.jpg 2x" alt="Фото кота до программы похудения.">
           </picture>
         </div>
-        <input class="example__range" type="range" min="0" max="100" value="50" aria-label="Процент показа фото 'До'.">
-        <div class="example__curtain" aria-hidden="true"></div>
+        <input class="slider__range" type="range" min="0" max="100" value="50" aria-label="Процент показа фото 'До'.">
+        <div class="slider__curtain" aria-hidden="true"></div>
       </div>
     </section>
     <section class="contacts">

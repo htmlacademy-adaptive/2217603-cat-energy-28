@@ -1,0 +1,45 @@
+.slider {
+  display: grid;
+  grid-template-columns: var(--persent, 50%) 1fr;
+  width: 280px;
+}
+
+.slider__item {
+  grid-row: 1/2;
+  display: flex;
+  overflow: hidden;
+
+  &--before {
+    grid-column: 1/2;
+  }
+
+  &--after {
+    grid-column: 2/3;
+    justify-content: flex-end;
+    // filter: grayscale(1);
+    // z-index: -1;   /*нужен только из-за filter*/
+  }
+}
+
+.slider__range {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  // background: F005;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+}
+
+.slider__curtain {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4px;
+  transform: translateX(50%);
+  background: $color-muddy-grey;
+  border-radius: 2px;
+  pointer-events: none;
+}
