@@ -45,38 +45,35 @@
       <h1 class="hero__title headline">Функциональное питание для котов</h1>
       <p class="hero__slogan caption">Занялся собой? Займись котом!</p>
       <a class="hero__link button" href="form.html">Подобрать программу</a>
-      <picture>
-        <!-- <source type="image/webp" media="(min-width: 1200px)"
+      <div class="hero__image-wrapper">
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1200px)"
           srcset="img/hero/hero-can-desktop.webp 1x, img/hero/hero-can-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/hero/hero-can-tablet.webp 1x, img/hero/hero-can-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/hero/hero-can-mobile.webp 1x, img/hero/hero-can-mobile@2x.webp 2x"> -->
-        <source media="(min-width: 1200px)"
-          srcset="img/hero/hero-can-desktop.png 1x, img/hero/hero-can-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/hero/hero-can-tablet.png 1x, img/hero/hero-can-tablet@2x.png 2x">
-        <img class="hero__image" src="img/hero/hero-can-mobile.png" width="280" height="270"
-          srcset="img/hero/hero-can-mobile@2x.png 2x" alt="Банка питания для котов CAT PRO ENERGY с курицей.">
-      </picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/hero/hero-can-desktop.png 1x, img/hero/hero-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/hero/hero-can-tablet.png 1x, img/hero/hero-can-tablet@2x.png 2x">
+          <img class="hero__image" src="img/hero/hero-can-mobile.png" width="280" height="270"
+            srcset="img/hero/hero-can-mobile@2x.png 2x" alt="Банка питания для котов CAT PRO ENERGY с курицей.">
+        </picture>
+      </div>
     </div>
     <section class="programs-block">
       <h2 class="visually-hidden">Варианты программ питания.</h2>
       <ul class="programs-block__list">
-        <li class="programs-block__item program">
+        <li class="programs-block__item program program--slim">
           <h3 class="program__title caption">похудение</h3>
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <div class="program__image-wrapper">
-            <img class="program__image" src="img/programs/cat-slim.svg" width="36" height="50" alt="Худой кот.">
-          </div>
           <a class="program__link caption" href="#">каталог slim</a>
         </li>
-        <li class="programs-block__item program">
+        <li class="programs-block__item program program--pro">
           <h3 class="program__title caption">Набор массы</h3>
           <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
-          <div class="program__image-wrapper">
-            <img class="program__image program__image--pro" src="img/programs/cat-pro.svg" width="67" height="28" alt="Мускулистый кот.">
-          </div>
           <a class="program__link caption" href="#">каталог pro</a>
         </li>
       </ul>

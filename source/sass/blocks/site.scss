@@ -17,12 +17,15 @@
   @media (min-width: $tablet-width) {
     @include font (18px, 24px);
     justify-content: flex-end;
+    gap: 10px 35px;
   }
 
   @media (min-width: $desktop-width) {
     @include font (20px, 30px);
     margin-bottom: 5px;
     color: $color-white;
+    max-height: 180px;
+    overflow: hidden;
   }
 }
 
@@ -54,11 +57,11 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    &:not(:last-of-type) {
-      margin-right: 35px;
-    }
-  }
+  // @media (min-width: $tablet-width) {
+  //   &:not(:last-of-type) {
+  //     margin-right: 35px;
+  //   }
+  // }
 
   &--current a {
     @media (min-width: $tablet-width) {
