@@ -9,25 +9,29 @@
   display: flex;
   overflow: hidden;
 
-  &--before {
+  &--state_before {
     grid-column: 1/2;
   }
 
-  &--after {
+  &--state_after {
     grid-column: 2/3;
     justify-content: flex-end;
-    // filter: grayscale(1);
-    // z-index: -1;   /*нужен только из-за filter*/
   }
 }
 
-.slider__range {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  // background: F005;
-  height: 100%;
-  margin: 0;
-  opacity: 0;
+.slider__image {
+  display: block;
+  width: 280px;
+  height: 256px;
+  object-fit: cover;
+
+  &--state_before {
+    object-position: left;
+  }
+
+  &--state_after {
+    object-position: right;
+  }
 }
 
 .slider__curtain {
@@ -39,7 +43,43 @@
   justify-content: center;
   width: 4px;
   transform: translateX(50%);
-  background: $color-muddy-grey;
+  color: var(--curtain-color, $color-muddy-grey);
+  background-color: currentColor;
   border-radius: 2px;
-  pointer-events: none;
+  cursor: col-resize;
+
+  &:hover {
+    --curtain-color: #68b738;
+  }
+
+  &:active {
+    --curtain-color: #5eaa2f;
+    opacity: 0.6;
+  }
+}
+
+.slider__button {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid currentColor;
+  background-color: $color-white;
+  padding: 0;
+  border-radius: 50%;
+  color: inherit;
+  cursor: col-resize;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    mask-image: url("../img/icons/slider-control.svg");
+    // mask-image: url("../img/sprite.svg#slider-control");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: currentColor;
+  }
 }
