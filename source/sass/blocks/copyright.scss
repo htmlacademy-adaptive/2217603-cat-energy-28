@@ -1,0 +1,27 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-muddy-grey;
+  text-decoration: none;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 168px;
+    justify-self: flex-end;
+    padding-block: 1.5px;
+  }
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  @include font(16px, 19px);
+  color: $color-grey;
+}

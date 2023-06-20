@@ -1,0 +1,17 @@
+.footer-logo {
+  color: $color-dark;
+  display: inline-flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+  }
+
+  &:hover .main-footer__logo-img {
+    color: $logo-footer-hover;
+  }
+
+  &:active .main-footer__logo-img {
+    color: $logo-footer-active;
+  }
+}

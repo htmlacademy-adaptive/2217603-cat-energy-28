@@ -12,3 +12,13 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+function initCatSlider() {
+  const container = document.querySelector('.slider');
+  document.querySelector('.slider__range')?.addEventListener('input', (e) => {
+    container.style.setProperty('--persent', `${e.target.value}%`);
+    document.querySelector('output').innerHTML = `${e.target.value}%`;
+  });
+}
+
+initCatSlider();

@@ -16,7 +16,7 @@
   <header class="main-header">
     <a class="main-header__logo logo">
       <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
         <img class="logo__icon" src="img/logo/logo-mobile.svg" width="34" height="38" alt="Иконка логотипа.">
       </picture>
@@ -45,38 +45,35 @@
       <h1 class="hero__title headline">Функциональное питание для котов</h1>
       <p class="hero__slogan caption">Занялся собой? Займись котом!</p>
       <a class="hero__link button" href="form.html">Подобрать программу</a>
-      <picture>
-        <!-- <source type="image/webp" media="(min-width: 1200px)"
+      <div class="hero__image-wrapper">
+        <picture>
+          <!-- <source type="image/webp" media="(min-width: 1200px)"
           srcset="img/hero/hero-can-desktop.webp 1x, img/hero/hero-can-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
           srcset="img/hero/hero-can-tablet.webp 1x, img/hero/hero-can-tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/hero/hero-can-mobile.webp 1x, img/hero/hero-can-mobile@2x.webp 2x"> -->
-        <source media="(min-width: 1200px)"
-          srcset="img/hero/hero-can-desktop.png 1x, img/hero/hero-can-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="img/hero/hero-can-tablet.png 1x, img/hero/hero-can-tablet@2x.png 2x">
-        <img class="hero__image" src="img/hero/hero-can-mobile.png" width="280" height="270"
-          srcset="img/hero/hero-can-mobile@2x.png 2x" alt="Банка питания для котов CAT PRO ENERGY с курицей.">
-      </picture>
+          <source media="(min-width: 1280px)"
+            srcset="img/hero/hero-can-desktop.png 1x, img/hero/hero-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/hero/hero-can-tablet.png 1x, img/hero/hero-can-tablet@2x.png 2x">
+          <img class="hero__image" src="img/hero/hero-can-mobile.png" width="280" height="270"
+            srcset="img/hero/hero-can-mobile@2x.png 2x" alt="Банка питания для котов CAT PRO ENERGY с курицей.">
+        </picture>
+      </div>
     </div>
     <section class="programs-block">
       <h2 class="visually-hidden">Варианты программ питания.</h2>
       <ul class="programs-block__list">
-        <li class="programs-block__item program">
+        <li class="programs-block__item program program--slim">
           <h3 class="program__title caption">похудение</h3>
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <div class="program__image-wrapper">
-            <img class="program__image" src="img/programs/cat-slim.svg" width="36" height="50" alt="Худой кот.">
-          </div>
           <a class="program__link caption" href="#">каталог slim</a>
         </li>
-        <li class="programs-block__item program">
+        <li class="programs-block__item program program--pro">
           <h3 class="program__title caption">Набор массы</h3>
           <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
-          <div class="program__image-wrapper">
-            <img class="program__image program__image--pro" src="img/programs/cat-pro.svg" width="67" height="28" alt="Мускулистый кот.">
-          </div>
           <a class="program__link caption" href="#">каталог pro</a>
         </li>
       </ul>
@@ -94,69 +91,75 @@
           <p class="advantages__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="advantages__item advantages__item--timing">
-          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantages__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
         </li>
       </ul>
     </section>
     <section class="example">
       <h2 class="example__title headline">Живой пример</h2>
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
+        Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+        часов
         в день. </p>
-      <dl class="example__list features">
-        <dt class="features__term">Снижение веса</dt>
-        <dd class="features__definition caption">5 кг</dd>
-        <dt class="features__term">Затрачено времени</dt>
-        <dd class="features__definition caption">60 дней</dd>
-      </dl>
-      <p class="example__expenses caption">Затраты на питание: <span class="example__price">15 000</span> РУБ.</p>
+      <div class="example__info-wrapper">
+        <dl class="example__list">
+          <div class="example__item feature">
+            <dt class="feature__term">снижение <span class="space space--mobile"></span>веса</dt>
+            <dd class="feature__definition caption">5 кг</dd>
+          </div>
+          <div class="example__item feature">
+            <dt class="feature__term">затрачено времени</dt>
+            <dd class="feature__definition caption">60 дней</dd>
+          </div>
+        </dl>
+        <p class="example__expenses caption">Затраты на питание: <span class="example__price">15 000 РУБ.</span></p>
+      </div>
       <div class="example__slider slider">
-        <div class="slider__before">
+        <div class="slider__item slider__item--state_before">
           <picture>
             <!--<source type="image/webp" media="(min-width: 768px)"
               srcset="img/slider/before-tablet.webp 1x, img/slider/before-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/slider/before-mobile.webp 1x, img/slider/before-mobile@2x.webp 2x"> -->
             <source media="(min-width: 768px)"
-              srcset="img/slider/before-tablet.jpg 1x, img/slider/before-tablet@2x.jpg 2x">
-            <img class="slider__image slider__image--before" src="img/slider/before-mobile.jpg" width="280" height="256"
-              srcset="img/slider/before-mobile@2x.jpg 2x" alt="Фото кота до программы похудения.">
+              srcset="img/slider/before-tablet.png 1x, img/slider/before-tablet@2x.png 2x">
+            <img class="slider__image slider__image--state_before" src="img/slider/before-mobile.png" width="280"
+              height="256" srcset="img/slider/before-mobile@2x.png 2x" alt="Фото кота до программы похудения.">
           </picture>
         </div>
-        <div class="slider__after">
+        <div class="slider__item slider__item--state_after">
           <picture>
             <!--<source type="image/webp" media="(min-width: 768px)"
               srcset="img/slider/after-tablet.webp 1x, img/slider/after-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/slider/after-mobile.webp 1x, img/slider/after-mobile@2x.webp 2x"> -->
             <source media="(min-width: 768px)"
-              srcset="img/slider/after-tablet.jpg 1x, img/slider/after-tablet@2x.jpg 2x">
-            <img class="slider__image slider__image--after" src="img/slider/after-mobile.jpg" width="280" height="256"
-              srcset="img/slider/after-mobile@2x.jpg 2x" alt="Фото кота до программы похудения.">
+              srcset="img/slider/after-tablet.png 1x, img/slider/after-tablet@2x.png 2x">
+            <img class="slider__image slider__image--state_after" src="img/slider/after-mobile.png" width="280"
+              height="256" srcset="img/slider/after-mobile@2x.png 2x" alt="Фото кота до программы похудения.">
           </picture>
         </div>
-        <input class="example__range" type="range" min="0" max="100" value="50" aria-label="Процент показа фото 'До'.">
-        <div class="example__curtain" aria-hidden="true"></div>
+        <input class="slider__range" type="range" min="0" max="100" value="50" aria-label="Процент показа фото 'До'.">
+        <div class="slider__curtain" aria-hidden="true"></div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__container">
-        <h2 class="contacts__title caption">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="contacts__title caption">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
         <address class="contacts__address">
           <p class="contacts__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="contacts__city">Санкт-Петербург</p>
         </address>
       </div>
-      <div class="contacts__map">
+      <div class="contacts__map map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.8040431138493!2d30.32033795572315!3d59.939053653515266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1685886579339!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen title="Карта местонахождения Кэт энерджи.">
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728558!2d30.320472477004596!3d59.938716474915196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1687261155516!5m2!1sru!2sru"
+          width="320" height="362" allowfullscreen="true" loading="lazy" title="Карта местонахождения Кэт энерджи.">
         </iframe>
         <noscript>
-          <a class="contacts__link"
-            href="https://www.google.com/maps/place/Большая+Конюшенная+ул.,+19%2F8,+Санкт-Петербург,+191186/@59.9387165,30.3230474,17z/data=!4m6!3m5!1s0x4696310fca145cc1:0x42b32648d8238007!8m2!3d59.9387165!4d30.3230474!16s%2Fg%2F11f789hbw0">
+          <a class="map__link" href="https://goo.gl/maps/xkeKveTV7hhoyvQk6">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/map/map-desktop.jpg">
+              <source media="(min-width: 1280px)" srcset="img/map/map-desktop.jpg">
               <source media="(min-width: 768px)" srcset="img/map/map-tablet.jpg">
-              <img class="contacts__image" src="img/map/map-mobile.jpg" width="320" height="362" loading="lazy"
+              <img class="map__image" src="img/map/map-mobile.jpg" width="320" height="362" loading="lazy"
                 alt="Изображение карты c адресом Кэт энерджи.">
             </picture>
           </a>
@@ -165,32 +168,47 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo">
-      <img class="main-footer__logo-img" src="img/logo/logo-text.svg" width="128" height="24"
+    <a class="main-footer__component footer-logo">
+      <img class="main-footer__logo-img" src="img/logo/footer-logo.svg" width="128" height="24"
         alt="Логотип сайта Кэт энерджи.">
     </a>
-    <ul class="main-footer__list social">
-      <li class="social__item">
-        <a class="social__link" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Мы во Вконтакте.</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Мы на Ютубе.</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Мы в Телеграмме.</span>
-        </a>
-      </li>
-    </ul>
-    <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive"
+    <div class="main-footer__component">
+      <ul class="main-footer__list social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы во Вконтакте.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Мы на Ютубе.</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Мы в Телеграмме.</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <a class="main-footer__component copyright" href="https://htmlacademy.ru/intensive/adaptive"
       aria-label="Лендинг интенсива HTML Academy">
-      <span class="copyright__text">Разработано</span>
-      <!-- <svg class="copyright__icon" aria-label="htmlacademy" focusable="false" width="27" height="34">
-        <use href="img/sprite.svg#logo-html"></use>
+      <span class="copyright__text">HTML Academy</span>
+      <svg class="copyright__icon" aria-label="htmlacademy" focusable="false" width="27" height="34" viewBox="0 0 27 34"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_83854_420)">
+          <path
+            d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+            fill="currentColor" />
+        </g>
+        <defs>
+          <clipPath id="clip0_83854_420">
+            <rect width="27" height="34" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
+      <!-- <svg class="copyright__icon" aria-label="Разработано htmlacademy" focusable="false" width="27" height="34">
+        <use href="img/sprite.svg#htmlacademy"></use>
       </svg> -->
     </a>
   </footer>
