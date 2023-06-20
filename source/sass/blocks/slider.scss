@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: var(--persent, 50%) 1fr;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+  }
 }
 
 .slider__item {
@@ -24,6 +28,11 @@
   width: 280px;
   height: 256px;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 
   &--state_before {
     object-position: left;

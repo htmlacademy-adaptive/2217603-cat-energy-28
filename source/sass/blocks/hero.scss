@@ -12,6 +12,22 @@
     flex-direction: column;
   }
 
+  @media (min-width: $tablet-width) {
+    min-height: 874px;
+    padding-top: 64px;
+    padding-left: 120px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 582px;
+    padding-top: 111px;
+    padding-left: 190px;
+    padding-bottom: 185px;
+    margin-bottom: 82px;
+    position: static;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -69,21 +85,6 @@
         background-image: url("../img/hero/cat-bg-desktop@2x.jpg");
       }
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 874px;
-    padding-top: 64px;
-    padding-left: 120px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 582px;
-    padding-top: 111px;
-    padding-left: 190px;
-    margin-bottom: 82px;
-    position: static;
   }
 }
 
