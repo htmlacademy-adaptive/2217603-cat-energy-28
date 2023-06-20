@@ -21,9 +21,8 @@
 
   @media (min-width: $desktop-width) {
     min-height: 582px;
-    padding-top: 111px;
+    padding-block: 111px 185px;
     padding-left: 190px;
-    padding-bottom: 185px;
     margin-bottom: 82px;
     position: static;
   }

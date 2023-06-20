@@ -8,8 +8,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-block: 26px;
 
   @media (min-width: $tablet-width) {
     padding: 56px 70px;
@@ -20,7 +19,7 @@
     position: absolute;
     top: 95px;
     left: 110px;
-    padding: 56px 60px 56px 80px;
+    padding-inline: 80px 60px;
     background-color: $color-white;
     z-index: 1;
   }

@@ -1,20 +1,17 @@
 .example {
   @include container;
   position: relative;
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding-block: 25px 40px;
   background-color: $color-smoky-white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 43px;
-    padding-bottom: 101px;
+    padding-block: 43px 101px;
     background-color: inherit;
     background-image: linear-gradient(to top, $color-smoky-white 462px, $color-white 462px);
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
-    padding-bottom: 75px;
+    padding-block: 0 75px;
   }
 
   &::before {
