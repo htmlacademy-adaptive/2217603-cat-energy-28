@@ -7,6 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2px;
   margin: 0 auto;
   padding-block: 26px;
 
@@ -19,6 +20,7 @@
     position: absolute;
     top: 95px;
     left: 110px;
+    max-height: 305px;
     padding-inline: 80px 60px;
     background-color: $color-white;
     z-index: 1;
@@ -29,6 +31,8 @@
   max-width: 171px;
   margin: 0;
   color: $color-dark;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
     margin-top: 4px;
@@ -46,6 +50,8 @@
   font-style: normal;
   line-height: 20px;
   color: $color-grey;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
     text-align: end;
@@ -59,6 +65,8 @@
 
 .contacts__street {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -71,4 +79,6 @@
 
 .contacts__city {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

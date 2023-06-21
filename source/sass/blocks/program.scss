@@ -31,6 +31,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 53px 53px;
+    max-width: 570px;
 
     &--slim::before {
       top: 81px;
@@ -73,6 +74,8 @@
   margin: 0;
   margin-bottom: 29px;
   padding-left: 72px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
     @include font(36px, 36px);

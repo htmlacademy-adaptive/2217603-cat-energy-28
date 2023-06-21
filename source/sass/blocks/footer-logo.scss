@@ -7,11 +7,11 @@
     justify-content: flex-start;
   }
 
-  &:hover .main-footer__logo-img {
+  &:hover {
     color: $logo-footer-hover;
   }
 
-  &:active .main-footer__logo-img {
+  &:active {
     color: $logo-footer-active;
   }
 }

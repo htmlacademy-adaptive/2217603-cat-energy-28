@@ -8,6 +8,8 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
+    padding-top: 2px;
     width: 174px;
     height: 52px;
   }
@@ -30,11 +32,9 @@
 }
 
 .logo__text {
-  margin-left: 15px;
   color: $color-dark;
 
   @media (min-width: $tablet-width) {
-    margin-top: 7px;
     margin-left: 12px;
     color: $color-grey;
   }
