@@ -7,11 +7,11 @@
     justify-content: flex-start;
   }
 
-  &:hover {
+  &[href]:hover {
     color: $logo-footer-hover;
   }
 
-  &:active {
+  &[href]:active {
     color: $logo-footer-active;
   }
 }
