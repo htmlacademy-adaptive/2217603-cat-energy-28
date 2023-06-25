@@ -3,6 +3,10 @@
     position: relative;
     padding-top: 27px;
 
+    @media (min-width: $tablet-width) {
+      padding-top: 64px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -23,4 +27,8 @@
   @include container;
   margin: 0;
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+  }
 }

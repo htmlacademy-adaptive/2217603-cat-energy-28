@@ -1,0 +1,94 @@
+.order-gift {
+  @include container;
+  padding-block: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-block: 69px 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.order-gift__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  min-width: 280px;
+  min-height: 290px;
+  background-color: rgba(104, 183, 56, 0.85);
+  text-decoration: none;
+  color: $color-white;
+  text-align: center;
+  padding: 43px;
+  background-image: url("../img/icons/icon-gift.svg");
+  // background-image: url("../img/sprite.svg#icon-gift");
+  background-repeat: no-repeat;
+  background-position: top 59px center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 200px;
+    text-align: start;
+    padding: 45px 124px;
+    background-position: top 57px left 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+    align-items: flex-end;
+    min-width: 245px;
+    min-height: 289px;
+    text-align: center;
+    padding: 42px;
+    background-position: top 55px center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 290px;
+    background-color: $color-grey;
+    background-image: url("../img/gift/gift-cat-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift/gift-cat-mobile@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      min-height: 200px;
+      background-image: url("../img/gift/gift-cat-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/gift/gift-cat-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 290px;
+      background-image: url("../img/gift/gift-cat-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/gift/gift-cat-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.order-gift__text {
+  @include font(16px, 20px);
+  max-width: 161px;
+  max-height: 108px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

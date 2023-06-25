@@ -1,7 +1,29 @@
-// .products {
-// }
+.products {
+  @media (min-width: $tablet-width) {
+    @include container;
+    margin-bottom: 68px;
+  }
+}
 
 .products__list {
   @include list-reset;
-  display: grid;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+}
+
+.products__item {
+  border-top: 1px solid $color-background-hover;
+
+  &:last-child {
+    border-bottom: 1px solid $color-background-hover;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
