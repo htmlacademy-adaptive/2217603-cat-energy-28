@@ -3,12 +3,13 @@
   padding-block: 78px 25px;
   text-align: center;
   background-image: url("../img/icons/icon-plus.svg");
+  // background-image: url("../img/sprite.svg#icon-plus");
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: top 25px center;
 
   @media (min-width: $tablet-width) {
-    min-width: 324px;
+    width: 324px;
     margin-top: 82px;
     border: 2px solid $color-background;
     padding: 159px 35px 36px 36px;
@@ -17,7 +18,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 245px;
+    width: 245px;
+    margin-top: 81px;
+    padding: 158px 36px 39px;
+    background-position: top 51px center;
   }
 }
 
@@ -25,6 +29,8 @@
   margin: 0;
   margin-bottom: 8px;
   color: $color-dark;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     max-width: 134px;
@@ -44,4 +50,9 @@
     max-width: 165px;
     margin: 0 auto 87px;
   }
+}
+
+.product-more__link {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

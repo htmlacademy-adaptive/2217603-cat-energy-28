@@ -23,7 +23,7 @@
 
   @media (min-width: $desktop-width) {
     @include font (20px, 30px);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     color: $color-white;
     max-height: 500px;
     overflow: hidden;
@@ -67,6 +67,10 @@
       border-bottom-color: $color-white;
     }
   }
+
+  &--current .site__link--inner {
+    border-bottom-color: $color-green;
+  }
 }
 
 .site__link {
@@ -82,12 +86,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 0 6px;
+    padding: 16px 0 8px;
   }
 
   &--inner {
     @media (min-width: $tablet-width) {
       padding: 17px 0 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px 0 8px;
+      color: $color-dark;
     }
   }
 

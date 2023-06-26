@@ -7,6 +7,10 @@
       padding-top: 64px;
     }
 
+    @media (min-width: $desktop-width) {
+      padding-top: 74px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -27,8 +31,14 @@
   @include container;
   margin: 0;
   margin-bottom: 41px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
   }
 }

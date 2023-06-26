@@ -3,6 +3,10 @@
     @include container;
     margin-bottom: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+  }
 }
 
 .products__list {
