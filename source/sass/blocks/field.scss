@@ -1,0 +1,45 @@
+.field {
+  @include font(16px, 18px);
+  font-family: inherit;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 13px 19px 12px;
+  border: 1px solid $color-smoky-grey;
+  border-radius: 0;
+  color: $color-grey;
+  background-color: $color-white;
+
+//   &::placeholder {
+//     color: rgba(0, 0, 0, 0.3);
+//   }
+
+//   &--textarea {
+//     width: 100%;
+//     max-height: 150px;
+//     vertical-align: top;
+//     margin-bottom: 32px;
+//     align-self: center;
+//     padding: 13px;
+
+//     @media (min-width: @tablet-width) {
+//       max-height: 160px;
+//       max-width: 768px;
+//       margin-bottom: 0;
+//     }
+  }
+
+//   &:hover {
+//     background-color: @color-grey-hover;
+//   }
+
+//   &:active {
+//     background-color: @color-white;
+//     border-color: @color-grey-hover;
+//   }
+
+//   &:disabled {
+//     background-color: @color-grey-hover;
+//     color: @color-white;
+//     opacity: 0.5;
+//   }
+// }

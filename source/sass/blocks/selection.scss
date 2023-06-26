@@ -1,8 +1,22 @@
-.selection {
-  padding-top: 27px;
+// .selection {
+// }
+
+.selection__wrapper {
+  @include container;
+  margin-bottom: 39px;
 }
 
 .selection__title {
   margin: 0;
   margin-bottom: 37px;
+}
+
+.selection__description {
+  @include font(14px, 18px);
+  margin: 0;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 323px;
+  }
 }
