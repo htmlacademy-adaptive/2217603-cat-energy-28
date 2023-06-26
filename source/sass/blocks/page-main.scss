@@ -17,7 +17,8 @@
 .page-main__title {
   @include container;
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 26px;
+  padding-bottom: 15px;
   text-overflow: ellipsis;
   overflow: hidden;
 

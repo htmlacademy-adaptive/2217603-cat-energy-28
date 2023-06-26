@@ -1,0 +1,77 @@
+.control {
+  gap: 15px;
+  cursor: pointer;
+  //   width: 100%;
+  //   max-width: 280px;
+  //   padding: 10px;
+
+  //   &--shortish {
+  //     @media (min-width: @desktop-width) {
+  //       padding-right: 0;
+  //     }
+}
+
+//   &:focus-within {
+//     outline-offset: 3px;
+//     outline: auto;
+//   }
+
+//   &:hover .control__mark {
+//     background-color: @color-grey-hover;
+//   }
+
+//   &:active .control__mark {
+//     background-color: @color-grey-active;
+//   }
+
+//   &:active .control__mark::before {
+//     opacity: 0.3;
+//   }
+
+//   &:disabled .control-mark {
+//     opacity: 0.5;
+//   }
+// }
+
+.control__mark {
+  flex-shrink: 0;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-extra-light-grey;
+}
+
+// .control__label {
+//   max-width: 218px;
+//   width: 100%;
+//   padding-left: 16px;
+// }
+
+.control__input[type="checkbox"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 19px;
+  height: 15px;
+  mask-image: url("../img/icons/icon-check.svg");
+  // mask-image: url("../img/sprite.svg#icon-check");
+  background-color: $color-green;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  background-color: $color-green;
+  border-radius: 50%;
+}
