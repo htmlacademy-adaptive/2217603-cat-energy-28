@@ -5,6 +5,10 @@
   //   max-width: 280px;
   //   padding: 10px;
 
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
   //   &--shortish {
   //     @media (min-width: @desktop-width) {
   //       padding-right: 0;
@@ -39,6 +43,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid $color-extra-light-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 // .control__label {
@@ -57,7 +66,15 @@
   height: 15px;
   mask-image: url("../img/icons/icon-check.svg");
   // mask-image: url("../img/sprite.svg#icon-check");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
   background-color: $color-green;
+
+  @media (min-width: $tablet-width) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .control__input[type="radio"] + .control__mark {

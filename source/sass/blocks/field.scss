@@ -10,15 +10,12 @@
   color: $color-grey;
   background-color: $color-white;
 
-  @media (min-width: $tablet-width) {
-    padding: 10px 19px;
-  }
-
   &--iconed {
     // flex-shrink: 0;
     // min-width: 202px;
     // max-width: 220px;
     padding-inline: 14px 34px;
+    border-color: $color-extra-light-grey;
   }
 
   &--textarea {
@@ -28,6 +25,10 @@
     vertical-align: top;
     padding: 9px 12px 9px 15px;
 
+    @media (min-width: $tablet-width) {
+      max-height: 174px;
+    }
+
     &::placeholder {
       color: $color-grey;
     }
@@ -36,6 +37,10 @@
     //       max-height: 160px;
     //       max-width: 768px;
     //       margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
   }
 }
 

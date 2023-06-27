@@ -30,6 +30,10 @@
 
 .form {
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
 }
 
 .form__group {
@@ -117,8 +121,17 @@
   position: relative;
   width: 100%;
   text-transform: none;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    margin-bottom: 71px;
+
+    &--extra {
+      margin-bottom: 52px;
+    }
+  }
 
   &::after {
     content: "";
@@ -137,13 +150,36 @@
   display: inline-block;
   max-width: 221px;
   padding-inline: 20px 23px;
+  padding-bottom: 5px;
   background-color: $color-white;
   text-overflow: ellipsis;
   overflow: hidden;
 
+  @media (min-width: $tablet-width) {
+    padding-inline: 39px;
+  }
+
   &--contacts {
     padding-top: 26px;
     padding-right: 14px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 595px;
+      padding-top: 0;
+      padding-right: 42px;
+    }
+  }
+
+  &--comment {
+    @media (min-width: $tablet-width) {
+      max-width: 259px;
+    }
+  }
+
+  &--extra {
+    @media (min-width: $tablet-width) {
+      max-width: 292px;
+    }
   }
 
   //   @media (min-width: $tablet-width) {
@@ -182,7 +218,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 20px;
-    padding: 0 67px 0 71px;
+    padding: 0 69px 0 70px;
     margin-bottom: 65px;
   }
 }
@@ -196,8 +232,11 @@
   &--with-icon {
     gap: 10px;
     position: relative;
-    //     padding-right: 58px;
     //     max-width: 402px;
+
+    @media (min-width: $tablet-width) {
+      gap: 20px;
+    }
 
     &::after {
       content: "";
@@ -210,6 +249,10 @@
       background-color: $color-dark-grey;
       background-repeat: no-repeat;
       background-position: center;
+
+      @media (min-width: $tablet-width) {
+        right: 17px;
+      }
     }
 
     &-tel::after {
@@ -233,14 +276,21 @@
 }
 
 .form__label-text {
+  flex-shrink: 0;
   max-width: 100px;
-  white-space: nowrap;
   color: $color-grey;
-  // text-overflow: ellipsis;
-  // overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     max-width: 117px;
+  }
+}
+
+.form__list-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-inline: 70px 69px;
+    margin-bottom: 75px;
   }
 }
 
@@ -251,15 +301,8 @@
   display: grid;
   gap: 13px;
 
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: 16px;
-
   @media (min-width: $tablet-width) {
-    padding-inline: 70px 69px;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //     justify-content: space-between;
+    padding: 0 70px 54px;
   }
 
   &--with-radio {
@@ -267,8 +310,15 @@
     color: $color-dark-grey;
 
     @media (min-width: $tablet-width) {
-      padding-block: 0;
-      margin-bottom: 75px;
+      padding: 25px 28px;
+      border: 1px solid $color-smoky-grey;
+    }
+  }
+
+  &--with-checkbox {
+    @media (min-width: $tablet-width) {
+      gap: 32px 40px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -317,22 +367,25 @@
   //   margin: 0 auto;
   gap: 21px;
 
-  //   @media (min-width: $tablet-width) {
-  //     padding: 0;
-  //     flex-direction: row;
-  //     justify-content: space-between;
-  //     align-items: center;
-  //     max-width: 768px;
-  //   }
+  @media (min-width: $tablet-width) {
+    padding-inline: 70px;
+    flex-direction: row;
+    gap: 64px;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     max-width: 768px;
+  }
 }
 
 .form__button {
   padding: 10px;
   //   max-width: 280px;
 
-  //   @media (min-width: $tablet-width) {
-  //     max-width: 324px;
-  //   }
+  @media (min-width: $tablet-width) {
+    line-height: 26px;
+    max-width: 282px;
+    padding: 13px;
+  }
 
   //   @media (min-width: $desktop-width) {
   //     max-width: 384px;
@@ -345,8 +398,9 @@
   text-transform: none;
   //   align-self: flex-end;
 
-  //   @media (min-width: $tablet-width) {
-  //     align-self: center;
-  //     margin-top: 7px;
-  //   }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    //     align-self: center;
+    //     margin-top: 7px;
+  }
 }

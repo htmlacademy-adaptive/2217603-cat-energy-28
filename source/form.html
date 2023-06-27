@@ -107,29 +107,31 @@
         </fieldset>
         <fieldset class="form__group form__group--bordered">
           <legend class="visually-hidden">Цель программы питания</legend>
-          <ul class="form__list form__list--with-radio">
-            <li class="form__item">
-              <label class="form__label control">
-                <input class="visually-hidden control__input" type="radio" name="purpose" value="weight-loss" checked>
-                <span class="control__mark"></span>
-                <span class="control__label">Похудение</span>
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__label control">
-                <input class="visually-hidden control__input" type="radio" name="purpose" value="mass-gain">
-                <span class="control__mark"></span>
-                <span class="control__label">Набор массы</span>
-              </label>
-            </li>
-            <li class="form__item">
-              <label class="form__label control">
-                <input class="visually-hidden control__input" type="radio" name="purpose" value="need-advice">
-                <span class="control__mark"></span>
-                <span class="control__label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
+          <div class="form__list-wrapper">
+            <ul class="form__list form__list--with-radio">
+              <li class="form__item">
+                <label class="form__label control">
+                  <input class="visually-hidden control__input" type="radio" name="purpose" value="weight-loss" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Похудение</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label control">
+                  <input class="visually-hidden control__input" type="radio" name="purpose" value="mass-gain">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Набор массы</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__label control">
+                  <input class="visually-hidden control__input" type="radio" name="purpose" value="need-advice">
+                  <span class="control__mark"></span>
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__legend headline headline--smaller">
@@ -138,19 +140,21 @@
           <div class="form__group-wrapper">
             <label class="form__label form__label--with-icon form__label--with-icon-email">
               <span class="form__label-text">E-mail:*</span>
-              <input class="form__field field field--iconed" type="email" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
-                name="selection-email" placeholder="Введите почту" value="kuklachev@gmail.com" required>
+              <input class="form__field field field--iconed" type="email"
+                pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" name="selection-email" placeholder="Введите почту"
+                value="kuklachev@gmail.com" required>
             </label>
             <label class="form__label form__label--with-icon form__label--with-icon-tel">
               <span class="form__label-text">Телефон:*</span>
-              <input class="form__field field field--iconed" type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$"
-                name="selection-phone" placeholder="Введите номер" value="8 (960) 900-60-90" required>
+              <input class="form__field field field--iconed" type="tel"
+                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" name="selection-phone"
+                placeholder="Введите номер" value="8 (960) 900-60-90" required>
             </label>
           </div>
         </fieldset>
         <fieldset class="form__group">
           <legend class="form__legend headline headline--smaller">
-            <span class="form__legend-text">Комментарий</span>
+            <span class="form__legend-text form__legend-text--comment">Комментарий</span>
           </legend>
           <div class="form__group-wrapper">
             <label class="visually-hidden" for="selection-comment">Пишите всё, что пожелаете.</label>
@@ -159,10 +163,10 @@
           </div>
         </fieldset>
         <fieldset class="form__group">
-          <legend class="form__legend headline headline--smaller">
-            <span class="form__legend-text">Дополнительно</span>
+          <legend class="form__legend form__legend--extra headline headline--smaller">
+            <span class="form__legend-text form__legend-text--extra">Дополнительно</span>
           </legend>
-          <ul class="form__list">
+          <ul class="form__list form__list--with-checkbox">
             <li class="form__item">
               <label class="form__label control">
                 <input class="visually-hidden control__input" type="checkbox" name="sweetener" checked>
