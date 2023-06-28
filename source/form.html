@@ -85,9 +85,10 @@
         <p class="selection__description caption">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="selection__form form caption caption--narrow" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="form__wrapper">
         <fieldset class="form__group form__group--bordered">
           <legend class="visually-hidden">Данные вашего кота</legend>
-          <div class="form__group-wrapper">
+          <div class="form__group-wrapper form__group-wrapper--information">
             <label class="form__label">
               <span class="form__label-text">Имя:*</span>
               <input class="form__field field" type="text" pattern="^[0-9A-Za-zА-Яа-яЁё\s]+$" name="selection-name"
@@ -133,11 +134,12 @@
             </ul>
           </div>
         </fieldset>
+      </div>
         <fieldset class="form__group">
           <legend class="form__legend headline headline--smaller">
             <span class="form__legend-text form__legend-text--contacts">Контактные данные (владельца кота)</span>
           </legend>
-          <div class="form__group-wrapper">
+          <div class="form__group-wrapper form__group-wrapper--contacts">
             <label class="form__label form__label--with-icon form__label--with-icon-email">
               <span class="form__label-text">E-mail:*</span>
               <input class="form__field field field--iconed" type="email"
