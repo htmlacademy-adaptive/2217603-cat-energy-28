@@ -1,41 +1,25 @@
 .control {
   gap: 15px;
   cursor: pointer;
-  //   width: 100%;
-  //   max-width: 280px;
-  //   padding: 10px;
+  max-width: fit-content;
 
   @media (min-width: $tablet-width) {
     gap: 20px;
   }
 
-  //   &--shortish {
-  //     @media (min-width: @desktop-width) {
-  //       padding-right: 0;
-  //     }
+  &:hover .control__mark {
+    border-color: $color-extra-grey;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:focus-within {
+    outline-offset: 2px;
+    outline: 2px solid $color-grey;
+  }
 }
-
-//   &:focus-within {
-//     outline-offset: 3px;
-//     outline: auto;
-//   }
-
-//   &:hover .control__mark {
-//     background-color: @color-grey-hover;
-//   }
-
-//   &:active .control__mark {
-//     background-color: @color-grey-active;
-//   }
-
-//   &:active .control__mark::before {
-//     opacity: 0.3;
-//   }
-
-//   &:disabled .control-mark {
-//     opacity: 0.5;
-//   }
-// }
 
 .control__mark {
   flex-shrink: 0;
@@ -49,12 +33,6 @@
     height: 40px;
   }
 }
-
-// .control__label {
-//   max-width: 218px;
-//   width: 100%;
-//   padding-left: 16px;
-// }
 
 .control__input[type="checkbox"]:checked + .control__mark::before {
   content: "";
@@ -91,4 +69,9 @@
   height: 13px;
   background-color: $color-green;
   border-radius: 50%;
+}
+
+.control__input:disabled + .control__mark,
+.control__input:disabled ~ .control__label {
+  opacity: 0.3;
 }

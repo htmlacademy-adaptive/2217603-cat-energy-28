@@ -146,37 +146,9 @@
   &--with-icon {
     gap: 10px;
     position: relative;
-    //     max-width: 402px;
 
     @media (min-width: $tablet-width) {
       gap: 20px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 15px;
-      width: 20px;
-      height: 20px;
-      background-color: $color-dark-grey;
-      background-repeat: no-repeat;
-      background-position: center;
-
-      @media (min-width: $tablet-width) {
-        right: 17px;
-      }
-    }
-
-    &-tel::after {
-      mask-image: url("../img/icons/icon-phone.svg");
-      // background-image: url("../img/sprite.svg#icon-phone");
-    }
-
-    &-email::after {
-      mask-image: url("../img/icons/icon-mail.svg");
-      // background-image: url("../img/sprite.svg#icon-mail");
     }
   }
 
@@ -245,28 +217,10 @@
   }
 }
 
-.form__item {
-  overflow: hidden;
-  text-overflow: ellipsis;
-//   width: 100%;
-//   max-width: 280px;
-
-//   &--with-checkbox {
-//     @media (min-width: $tablet-width) {
-//       max-width: 224px;
-//     }
-
-//     @media (min-width: $desktop-width) {
-//       width: fit-content;
-//     }
-//   }
-
-//   &--shortish {
-//     @media (min-width: $desktop-width) {
-//       max-width: 238px;
-//     }
-//   }
-}
+// .form__item {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }
 
 .form__button-wrapper {
   @include container;

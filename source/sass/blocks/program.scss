@@ -151,6 +151,10 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    outline-offset: 2px;
+  }
+
   @media (min-width: $tablet-width) {
     line-height: 30px;
     padding-right: 57px;

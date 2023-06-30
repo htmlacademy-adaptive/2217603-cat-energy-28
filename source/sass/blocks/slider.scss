@@ -98,3 +98,7 @@
   --curtain-color: #5eaa2f;
   opacity: 0.6;
 }
+
+.slider__range:focus-visible + .slider__curtain {
+  --curtain-color: #ceb676;
+}

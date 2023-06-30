@@ -75,13 +75,22 @@
     }
 
     @media (min-width: $desktop-width) {
-      min-height: 290px;
+      min-height: 289px;
       background-image: url("../img/gift/gift-cat-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/gift/gift-cat-desktop@2x.jpg");
       }
     }
+  }
+
+  &:hover {
+    background-color: rgba(94, 170, 47, 0.85);
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 0.85);
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 

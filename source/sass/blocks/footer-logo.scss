@@ -1,7 +1,8 @@
 .footer-logo {
-  color: $color-dark;
   display: inline-flex;
   justify-content: center;
+  max-width: fit-content;
+  color: $color-dark;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
@@ -13,5 +14,9 @@
 
   &[href]:active {
     color: $logo-footer-active;
+  }
+
+  &[href]:focus {
+    outline-offset: 2px;
   }
 }

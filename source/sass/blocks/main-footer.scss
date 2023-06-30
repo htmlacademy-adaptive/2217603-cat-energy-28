@@ -32,4 +32,8 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }
