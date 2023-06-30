@@ -1,11 +1,12 @@
 .footer-logo {
-  display: inline-flex;
-  justify-content: center;
+  display: block;
   max-width: fit-content;
+  margin: 0 auto;
   color: $color-dark;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-start;
+    margin: 0;
+    // max-width: 143px;
   }
 
   &[href]:hover {
@@ -18,5 +19,13 @@
 
   &[href]:focus {
     outline-offset: 2px;
+  }
+}
+
+.footer-logo__icon {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
   }
 }

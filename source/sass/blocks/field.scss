@@ -16,13 +16,13 @@
 
   &--textarea {
     border: 1px solid $color-smoky-grey;
-    max-height: 150px;
+    min-height: 150px;
     vertical-align: top;
     padding: 9px 12px 9px 15px;
     resize: none;
 
     @media (min-width: $tablet-width) {
-      max-height: 174px;
+      min-height: 174px;
     }
 
     &::placeholder {

@@ -18,7 +18,7 @@
     @include font (18px, 24px);
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 10px 35px;
+    gap: 10px 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +26,6 @@
     margin-bottom: 6px;
     color: $color-white;
     max-height: 500px;
-    // overflow: hidden;
   }
 }
 
@@ -82,7 +81,7 @@
   color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 18px 0 10px;
+    padding: 18px 0 8px;
   }
 
   @media (min-width: $desktop-width) {
