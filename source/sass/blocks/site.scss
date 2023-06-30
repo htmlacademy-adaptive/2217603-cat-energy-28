@@ -17,15 +17,15 @@
   @media (min-width: $tablet-width) {
     @include font (18px, 24px);
     justify-content: flex-end;
-    gap: 10px 35px;
+    align-items: flex-start;
+    gap: 10px 36px;
   }
 
   @media (min-width: $desktop-width) {
     @include font (20px, 30px);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     color: $color-white;
-    max-height: 180px;
-    overflow: hidden;
+    max-height: 500px;
   }
 }
 
@@ -66,6 +66,10 @@
       border-bottom-color: $color-white;
     }
   }
+
+  &--current .site__link--inner {
+    border-bottom-color: $color-green;
+  }
 }
 
 .site__link {
@@ -77,11 +81,22 @@
   color: inherit;
 
   @media (min-width: $tablet-width) {
-    padding: 18px 0 10px;
+    padding: 18px 0 8px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 0 6px;
+    padding: 16px 0 8px;
+  }
+
+  &--inner {
+    @media (min-width: $tablet-width) {
+      padding: 17px 0 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 16px 0 8px;
+      color: $color-dark;
+    }
   }
 
   &[href]:hover {
@@ -90,5 +105,9 @@
 
   &[href]:active {
     opacity: 0.3;
+  }
+
+  &[href]:focus {
+    outline-offset: 2px;
   }
 }

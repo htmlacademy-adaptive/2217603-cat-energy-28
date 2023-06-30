@@ -7,4 +7,16 @@
   @media (min-width: $tablet-width) {
     @include font(20px, 24px);
   }
+
+  @media (min-width: $desktop-width) {
+    @include font(20px, 21px);
+  }
+
+  &--narrow {
+    @include font(16px, 18px);
+
+    @media (min-width: $tablet-width) {
+      @include font(20px, 30px);
+    }
+  }
 }

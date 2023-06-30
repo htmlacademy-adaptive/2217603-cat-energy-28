@@ -33,14 +33,17 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (max-width: $mobile-width-only) {
     line-height: 40px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 63px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,6 +91,7 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    gap: 43px;
     max-width: 370px;
     margin: 0;
     padding-bottom: 5px;
@@ -100,12 +104,13 @@
 
 .example__expenses {
   font-size: 14px;
-  max-width: 188px;
+  max-width: 186px;
   margin: 0 auto 20px;
 
   @media (min-width: $tablet-width) {
     @include font(20px, 20px);
     margin: 0;
+    margin-bottom: 5px;
     text-align: end;
   }
 

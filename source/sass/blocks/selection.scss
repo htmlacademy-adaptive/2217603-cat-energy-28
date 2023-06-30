@@ -1,8 +1,40 @@
-.selection {
-  padding-top: 27px;
+.selection__wrapper {
+  @include container;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-inline: 70px 66px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container;
+  }
 }
 
 .selection__title {
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 22px;
+  padding-bottom: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
+}
+
+.selection__description {
+  @include font(14px, 18px);
+  margin: 0;
+  max-width: 270px;
+
+  @media (min-width: $tablet-width) {
+    @include font(20px, 30px);
+    max-width: 323px;
+  }
 }

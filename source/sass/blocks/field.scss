@@ -1,0 +1,103 @@
+.field {
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 13px 19px 12px;
+  border: 1px solid $color-smoky-grey;
+  border-radius: 0;
+  color: $color-grey;
+  background-color: $color-white;
+
+  &--iconed {
+    padding-inline: 14px 34px;
+  }
+
+  &--textarea {
+    border: 1px solid $color-smoky-grey;
+    min-height: 150px;
+    vertical-align: top;
+    padding: 9px 12px 9px 15px;
+    resize: none;
+
+    @media (min-width: $tablet-width) {
+      min-height: 174px;
+    }
+
+    &::placeholder {
+      color: $color-grey;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 19px;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &:hover {
+    border-color: $color-extra-light-grey;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-grey;
+    box-shadow: inset 0 0 0 1px $color-grey;
+
+    & + .field__icon {
+      background-color: $color-green;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:invalid {
+    border-color: $color-error;
+    box-shadow: inset 0 0 0 1px $color-error;
+
+    & + .field__icon {
+      background-color: $color-error;
+    }
+  }
+}
+
+.field__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: $color-dark-grey;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+  }
+
+  &--tel {
+    mask-image: url("../img/icons/icon-phone.svg");
+    // background-image: url("../img/sprite.svg#icon-phone");
+  }
+
+  &--email {
+    mask-image: url("../img/icons/icon-mail.svg");
+    // background-image: url("../img/sprite.svg#icon-mail");
+  }
+}

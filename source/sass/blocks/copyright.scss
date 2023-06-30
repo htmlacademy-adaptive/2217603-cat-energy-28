@@ -9,6 +9,7 @@
   @media (min-width: $tablet-width) {
     max-width: 168px;
     justify-self: flex-end;
+    flex-wrap: wrap;
     padding-block: 1.5px;
   }
 
@@ -19,9 +20,18 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus {
+    outline-offset: 2px;
+  }
 }
 
 .copyright__text {
   @include font(16px, 19px);
   color: $color-grey;
+  max-width: 168px;
+}
+
+.copyright__icon {
+  flex-shrink: 0;
 }

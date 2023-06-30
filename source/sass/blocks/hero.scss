@@ -89,12 +89,17 @@
 
 .hero__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
   max-width: 250px;
+  max-height: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (min-width: $tablet-width) {
-    max-width: 416px;
-    margin-bottom: 41px;
+    max-width: 575px;
+    max-height: min-content;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,6 +114,7 @@
 
   @media (min-width: $tablet-width) {
     @include font(20px, 20px);
+    max-width: 575px;
     margin-bottom: 49px;
   }
 
@@ -120,6 +126,7 @@
 .hero__link {
   @media (max-width: $mobile-width-only) {
     @include font(14px, 18px);
+    padding: 11px;
     order: 1;
   }
 

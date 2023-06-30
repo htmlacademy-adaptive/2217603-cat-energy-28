@@ -13,28 +13,28 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 40px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   @media (max-width: $mobile-width-only) {
     line-height: 40px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 22px;
   }
 }
 
 .advantages__list {
   @include list-reset;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 37px 153px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 37px 63px;
     counter-reset: section;
   }
 

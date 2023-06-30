@@ -8,13 +8,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    align-items: center;
+    padding-top: 6px;
     width: 174px;
     height: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
-    height: 59px;
+    height: 60px;
   }
 }
 
@@ -30,11 +32,9 @@
 }
 
 .logo__text {
-  margin-left: 15px;
   color: $color-dark;
 
   @media (min-width: $tablet-width) {
-    margin-top: 7px;
     margin-left: 12px;
     color: $color-grey;
   }
