@@ -22,6 +22,8 @@
   }
 
   &:focus {
+    color: $color-green;
+    outline: 2px solid $color-green;
     outline-offset: 2px;
   }
 }

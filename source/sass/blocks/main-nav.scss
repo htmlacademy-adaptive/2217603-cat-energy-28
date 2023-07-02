@@ -81,6 +81,11 @@
     opacity: 0.6;
   }
 
+  &:focus {
+    outline: 2px solid $color-green;
+    outline-offset: 2px;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

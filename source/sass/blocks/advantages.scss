@@ -36,12 +36,14 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 37px 63px;
     counter-reset: section;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 77px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
     max-width: 1220px;
-    margin: 0 auto;
   }
 }
 

@@ -36,6 +36,11 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &:focus {
+    outline: 2px solid $color-green;
+    outline-offset: 2px;
+  }
+
   &:disabled {
     background-color: $color-grey;
     opacity: 0.3;

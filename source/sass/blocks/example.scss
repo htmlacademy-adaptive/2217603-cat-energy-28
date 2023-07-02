@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding-block: 0 75px;
+    background-image: linear-gradient(to top, $color-smoky-white 467px, $color-white 467px);
   }
 
   &::before {
@@ -48,7 +49,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 660px;
-    margin-bottom: 146px;
+    margin-bottom: 135px;
   }
 }
 
@@ -128,7 +129,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
-    margin-left: 56px;
+    margin-left: 60px;
   }
 }
 

@@ -41,7 +41,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
-    margin-bottom: 71px;
+    margin-bottom: 69px;
 
     &--extra {
       margin-bottom: 52px;
@@ -131,9 +131,8 @@
     }
 
     &--contacts {
-      display: flex;
-      justify-content: space-between;
-      gap: 78px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
     }
   }
 }
@@ -157,6 +156,10 @@
   }
 }
 
+// .form__label--with-icon + .form__label--with-icon {
+//   margin-left: 18px;
+// }
+
 .form__label-text {
   flex-shrink: 0;
   max-width: 100px;
@@ -172,12 +175,13 @@
 .form__list-wrapper {
   @media (min-width: $tablet-width) {
     padding-inline: 70px 69px;
+    padding-top: 8px;
     margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-bottom: 69px;
+    margin-bottom: 65px;
   }
 }
 
@@ -189,7 +193,7 @@
   gap: 13px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 54px;
+    padding: 0 70px 52px;
   }
 
   &--with-radio {
@@ -204,7 +208,7 @@
 
   &--with-checkbox {
     @media (min-width: $tablet-width) {
-      gap: 32px 40px;
+      gap: 32px 60px;
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -262,5 +266,6 @@
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+    margin-bottom: 7px;
   }
 }

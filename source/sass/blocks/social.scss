@@ -9,11 +9,6 @@
 
 .social__item {
   max-width: 28px;
-
-  &:focus-within {
-    outline-offset: 2px;
-    outline: 2px solid $color-grey;
-  }
 }
 
 .social__link {
@@ -44,5 +39,9 @@
   &:active {
     background-color: $color-green;
     opacity: 0.3;
+  }
+
+  &:focus {
+    background-color: $color-green;
   }
 }

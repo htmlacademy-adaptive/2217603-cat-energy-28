@@ -53,10 +53,10 @@
     padding: 77px 61px 55px 52px;
 
     &--slim::before {
-      top: 47px;
+      top: 41px;
       left: 52px;
       width: 100px;
-      height: 106px;
+      height: 105px;
     }
 
     &--pro::before {
@@ -152,6 +152,7 @@
   }
 
   &:focus {
+    outline: 2px solid $color-green;
     outline-offset: 2px;
   }
 
@@ -166,6 +167,12 @@
     &:hover::after,
     &:active::after {
       right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 6px;
     }
   }
 }

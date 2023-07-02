@@ -6,7 +6,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    // max-width: 143px;
   }
 
   &[href]:hover {
@@ -18,6 +17,8 @@
   }
 
   &[href]:focus {
+    color: $logo-footer-hover;
+    outline: 2px solid $color-green;
     outline-offset: 2px;
   }
 }
@@ -27,5 +28,6 @@
 
   @media (min-width: $tablet-width) {
     width: 143px;
+    height: 27px;
   }
 }

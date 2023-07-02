@@ -18,6 +18,10 @@
     flex-wrap: wrap;
     gap: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .products__item {
