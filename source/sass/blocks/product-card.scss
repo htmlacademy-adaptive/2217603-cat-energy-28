@@ -147,7 +147,6 @@
 .product-card__info-wrapper {
   display: flex;
   justify-content: space-between;
-  // max-width: 249px;
 
   @media (min-width: $tablet-width) {
     padding-block: 7px 9px;
@@ -170,8 +169,4 @@
 
 .product-card__order {
   grid-column: 1/-1;
-
-  // @media (min-width: $tablet-width) {
-  //   margin-inline: 2px;
-  // }
 }

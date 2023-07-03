@@ -156,10 +156,6 @@
   }
 }
 
-// .form__label--with-icon + .form__label--with-icon {
-//   margin-left: 18px;
-// }
-
 .form__label-text {
   flex-shrink: 0;
   max-width: 100px;
@@ -220,11 +216,6 @@
     }
   }
 }
-
-// .form__item {
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-// }
 
 .form__button-wrapper {
   @include container;

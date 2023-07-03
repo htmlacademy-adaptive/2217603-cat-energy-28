@@ -59,27 +59,24 @@
     background-color: $color-green;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 30px 32px;
     flex-shrink: 0;
   }
 
   &--nutrition::before {
-    background-image: url("../img/icons/icon-leaf.svg");
-    // background-image: url("../img/sprite.svg#icon-leaf");
+    background-image: url("../img/sprite.svg#icon-leaf");
   }
 
   &--boiling::before {
-    background-image: url("../img/icons/icon-water.svg");
-    // background-image: url("../img/sprite.svg#icon-water");
+    background-image: url("../img/sprite.svg#icon-water");
   }
 
   &--feeding::before {
-    background-image: url("../img/icons/icon-food.svg");
-    // background-image: url("../img/sprite.svg#icon-food");
+    background-image: url("../img/sprite.svg#icon-food");
   }
 
   &--timing::before {
-    background-image: url("../img/icons/icon-time.svg");
-    // background-image: url("../img/sprite.svg#icon-time");
+    background-image: url("../img/sprite.svg#icon-time");
   }
 
   @media (min-width: $tablet-width) {

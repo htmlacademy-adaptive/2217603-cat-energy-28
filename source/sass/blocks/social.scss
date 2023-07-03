@@ -21,15 +21,15 @@
   mask-repeat: no-repeat;
 
   &--vkontakte {
-    mask-image: url("../img/icons/vkontakte.svg");
+    mask-image: url("../img/sprite.svg#vkontakte");
   }
 
   &--youtube {
-    mask-image: url("../img/icons/youtube.svg");
+    mask-image: url("../img/sprite.svg#youtube");
   }
 
   &--telegram {
-    mask-image: url("../img/icons/telegram.svg");
+    mask-image: url("../img/sprite.svg#telegram");
   }
 
   &:hover {

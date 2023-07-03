@@ -2,10 +2,9 @@
   @include container;
   padding-block: 79px 25px;
   text-align: center;
-  background-image: url("../img/icons/icon-plus.svg");
-  // background-image: url("../img/sprite.svg#icon-plus");
+  background-image: url("../img/sprite.svg#icon-plus");
   background-repeat: no-repeat;
-  background-size: 30px;
+  background-size: 30px 30px;
   background-position: top 25px center;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +12,7 @@
     margin-top: 82px;
     border: 2px solid $color-background;
     padding: 159px 35px 36px 36px;
-    background-size: 60px;
+    background-size: 60px 60px;
     background-position: top 52px center;
   }
 

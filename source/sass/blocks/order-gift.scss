@@ -23,9 +23,9 @@
   color: $color-white;
   text-align: center;
   padding: 43px;
-  background-image: url("../img/icons/icon-gift.svg");
-  // background-image: url("../img/sprite.svg#icon-gift");
+  background-image: url("../img/sprite.svg#icon-gift");
   background-repeat: no-repeat;
+  background-size: 78px 80px;
   background-position: top 59px center;
 
   @media (min-width: $tablet-width) {

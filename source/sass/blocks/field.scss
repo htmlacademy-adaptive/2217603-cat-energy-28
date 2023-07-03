@@ -92,12 +92,10 @@
   }
 
   &--tel {
-    mask-image: url("../img/icons/icon-phone.svg");
-    // background-image: url("../img/sprite.svg#icon-phone");
+    mask-image: url("../img/sprite.svg#icon-phone");
   }
 
   &--email {
-    mask-image: url("../img/icons/icon-mail.svg");
-    // background-image: url("../img/sprite.svg#icon-mail");
+    mask-image: url("../img/sprite.svg#icon-mail");
   }
 }
