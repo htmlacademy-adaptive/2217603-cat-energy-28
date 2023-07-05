@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     @include container;
     display: flex;
+    gap: 93px;
     justify-content: space-between;
     min-height: 52px;
   }

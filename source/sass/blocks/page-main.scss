@@ -1,4 +1,6 @@
 .page-main {
+  flex-grow: 1;
+
   &--inner {
     padding-top: 27px;
     border-top: 1px solid $color-light-grey;

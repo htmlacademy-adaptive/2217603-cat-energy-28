@@ -16,16 +16,16 @@
 
   @media (min-width: $tablet-width) {
     @include font (18px, 24px);
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 10px 36px;
+    max-width: 445px;
+    gap: 10px 35px;
   }
 
   @media (min-width: $desktop-width) {
     @include font (20px, 30px);
+    margin-left: 130px;
     margin-bottom: 6px;
     color: $color-white;
-    max-height: 500px;
+    max-width: 480px;
   }
 }
 
@@ -99,7 +99,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 8px 0;
+    padding: 7px 0;
     margin-top: 8px;
 
     &[href]:focus {

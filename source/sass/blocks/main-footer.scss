@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-block: 62px;
+    padding-block: 66px;
   }
 }
 
@@ -39,5 +39,10 @@
 
   @media (min-width: $tablet-width) {
     text-align: start;
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 6px;
   }
 }

@@ -7,6 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     padding: 0;
   }
 }
@@ -53,12 +54,12 @@
     top: 0;
     right: 0;
     width: 100%;
-    min-height: 290px;
+    height: 100%;
     background-color: $color-grey;
     background-image: url("../img/gift/gift-cat-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
@@ -66,7 +67,6 @@
     }
 
     @media (min-width: $tablet-width) {
-      min-height: 200px;
       background-image: url("../img/gift/gift-cat-tablet.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -75,7 +75,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      min-height: 289px;
       background-image: url("../img/gift/gift-cat-desktop.jpg");
 
       @media (min-resolution: 2dppx) {

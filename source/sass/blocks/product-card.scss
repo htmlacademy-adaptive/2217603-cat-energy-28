@@ -7,7 +7,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 8px 36px 39px;
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     row-gap: 31px;
     background-image: linear-gradient(to bottom, $color-white 81px, $color-background 81px);
@@ -169,4 +170,8 @@
 
 .product-card__order {
   grid-column: 1/-1;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
