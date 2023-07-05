@@ -17,12 +17,13 @@
 
   &:focus-within {
     outline-offset: 2px;
-    outline: 2px solid $color-grey;
+    outline: 2px solid $color-green;
   }
 }
 
 .control__mark {
   flex-shrink: 0;
+  align-self: start;
   position: relative;
   width: 30px;
   height: 30px;
@@ -42,8 +43,7 @@
   transform: translate(-50%, -50%);
   width: 19px;
   height: 15px;
-  mask-image: url("../img/icons/icon-check.svg");
-  // mask-image: url("../img/sprite.svg#icon-check");
+  mask-image: url("../img/sprite.svg#icon-check");
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
@@ -69,6 +69,11 @@
   height: 13px;
   background-color: $color-green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .control__input:disabled + .control__mark,

@@ -1,6 +1,8 @@
 .products {
   @media (min-width: $tablet-width) {
     @include container;
+    display: flex;
+    justify-content: center;
     margin-bottom: 68px;
   }
 
@@ -17,6 +19,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    gap: 60px 80px;
   }
 }
 

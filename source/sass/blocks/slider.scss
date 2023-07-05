@@ -82,8 +82,8 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    mask-image: url("../img/icons/slider-control.svg");
-    // mask-image: url("../img/sprite.svg#slider-control");
+    mask-image: url("../img/sprite.svg#slider-control");
+    mask-size: 24px 18px;
     mask-repeat: no-repeat;
     mask-position: center;
     background-color: currentColor;

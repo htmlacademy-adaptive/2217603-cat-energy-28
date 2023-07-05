@@ -6,15 +6,13 @@
 
   &--closed {
     .main-nav__toggle {
-      background-image: url("../img/icons/menu-burger.svg");
-      // background-image: url("../img/sprite.svg#menu-burger");
+      background-image: url("../img/sprite.svg#menu-burger");
     }
   }
 
   &--opened {
     .main-nav__toggle {
-      background-image: url("../img/icons/menu-cross.svg");
-      // background-image: url("../img/sprite.svg#menu-cross");
+      background-image: url("../img/sprite.svg#menu-cross");
       right: 23px;
       width: 18px;
       height: 18px;
@@ -79,6 +77,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid $color-green;
+    outline-offset: 2px;
   }
 
   @media (min-width: $tablet-width) {

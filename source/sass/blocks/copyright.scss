@@ -10,7 +10,7 @@
     max-width: 168px;
     justify-self: flex-end;
     flex-wrap: wrap;
-    padding-block: 1.5px;
+    padding-block: 2px;
   }
 
   &:hover {
@@ -22,6 +22,8 @@
   }
 
   &:focus {
+    color: $color-green;
+    outline: 2px solid $color-green;
     outline-offset: 2px;
   }
 }

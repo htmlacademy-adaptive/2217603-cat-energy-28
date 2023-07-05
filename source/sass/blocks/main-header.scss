@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     @include container;
     display: flex;
+    gap: 93px;
     justify-content: space-between;
     min-height: 52px;
   }
@@ -16,6 +17,7 @@
 
 .main-header__logo {
   min-height: 65px;
+  position: relative;
 
   &[href]:hover {
     opacity: 0.8;
@@ -23,6 +25,27 @@
 
   &[href]:active {
     opacity: 0.6;
+  }
+
+  &[href]:focus {
+    @media (max-width: $mobile-width-only) {
+      outline: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 14px;
+        width: 200px;
+        height: 50px;
+        border: 2px solid $color-green;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      outline: 2px solid $color-green;
+      outline-offset: 2px;
+    }
   }
 
   @media (min-width: $tablet-width) {
