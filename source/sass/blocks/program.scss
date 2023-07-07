@@ -1,7 +1,10 @@
 .program {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: $color-background;
   padding: 30px 20px 18px 19px;
-  position: relative;
 
   &::before {
     content: "";
@@ -122,6 +125,7 @@
   text-decoration: none;
   color: inherit;
   line-height: 16px;
+  margin-top: auto;
   padding: 4px 56px 4px 0;
 
   &::after {
