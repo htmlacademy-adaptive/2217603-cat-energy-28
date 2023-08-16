@@ -168,6 +168,30 @@
   }
 }
 
+.form__field-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: $color-dark-grey;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+  }
+
+  &--tel {
+    mask-image: url("../img/sprite.svg#icon-phone");
+  }
+
+  &--email {
+    mask-image: url("../img/sprite.svg#icon-mail");
+  }
+}
+
 .form__list-wrapper {
   @media (min-width: $tablet-width) {
     padding-inline: 70px 69px;
