@@ -52,7 +52,7 @@
         <h2 class="selection__title headline">Подбор программы</h2>
         <p class="selection__description caption">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
-      <form class="selection__form form caption caption--narrow" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="selection__form form caption caption--narrow" action="https://echo.htmlacademy.ru/" method="post">
         <!-- Чтобы показать состояние ошибки, присвойте input класс "field--error" -->
         <div class="form__wrapper">
           <fieldset class="form__group form__group--bordered">
@@ -115,14 +115,14 @@
               <input class="form__field field field--iconed" type="email"
                 pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" name="selection-email" placeholder="Введите почту"
                 value="kuklachev@gmail.com" required>
-              <span class="field__icon field__icon--email"></span>
+              <span class="form__field-icon form__field-icon--email"></span>
             </label>
             <label class="form__label form__label--with-icon">
               <span class="form__label-text">Телефон:*</span>
               <input class="form__field field field--iconed" type="tel"
                 pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{10}$" name="selection-phone"
                 placeholder="Введите номер" value="8 (960) 900-60-90" required>
-              <span class="field__icon field__icon--tel"></span>
+              <span class="form__field-icon form__field-icon--tel"></span>
             </label>
           </div>
         </fieldset>
