@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding-block: 0 70px;
+    background-image: linear-gradient($color-white 136px, $color-smoky-white 136px);
   }
 
   &::before {
