@@ -34,7 +34,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site__item {
+  .main-nav--closed .main-nav__site-item {
     display: none;
   }
 
@@ -47,7 +47,7 @@
     min-height: 0;
   }
 
-  .main-nav--nojs .site__item {
+  .main-nav--nojs .main-nav__site-item {
     display: block;
   }
 
